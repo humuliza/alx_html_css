@@ -1,0 +1,110 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #111;
+    color: white;
+  }
+  
+  /* Header Styling */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  .logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: white;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s;
+  }
+  
+  .nav-links a:hover {
+    color: #FF6565;
+  }
+  
+  /* "Our Results" Section */
+  .our-results {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #222;
+  }
+  
+  .our-results h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+  }
+  
+  .results {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+  }
+  
+  .result-card {
+    text-align: center;
+  }
+  
+  .result-card p {
+    font-size: 1.2rem;
+    margin-top: 15px;
+    color: #ddd;
+  }
+  
+  /* Pentagon Styling */
+  .pentagon {
+    position: relative;
+    width: 120px;
+    height: 120px;
+    background: #FF6565;
+    clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+  
+  .pentagon h3 {
+    font-size: 1.5rem;
+    color: white;
+    margin: 0;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .results {
+      flex-direction: column;
+      gap: 20px;
+    }
+  
+    .pentagon {
+      width: 100px;
+      height: 100px;
+    }
+  
+    .pentagon h3 {
+      font-size: 1.2rem;
+    }
+  }
+  

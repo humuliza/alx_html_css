@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Responsive headphones landing page">
+  <title>Headphones Landing Page</title>
+  <style>
+    /* General Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Body Styling */
+    body {
+      font-family: 'Source Sans Pro', Arial, sans-serif;
+      line-height: 1.6;
+      color: #333;
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    /* Header Styling */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 0;
+    }
+
+    .logo {
+      font-size: 1.8rem;
+      font-weight: bold;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: #333;
+      transition: color 0.3s;
+    }
+
+    .nav-links a:hover,
+    .nav-links a:active {
+      color: #FF6565;
+    }
+
+    /* Hero Section */
+    .hero {
+      text-align: center;
+      padding: 60px 0;
+      background: #f5f5f5;
+    }
+
+    .hero h2 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      margin-bottom: 30px;
+    }
+
+    .cta-button {
+      background: #FF6565;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: opacity 0.3s;
+    }
+
+    .cta-button:hover,
+    .cta-button:active {
+      opacity: 0.9;
+    }
+
+    /* Features Section */
+    .features {
+      padding: 40px 0;
+    }
+
+    .features h3 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+
+    .features ul {
+      list-style: disc;
+      padding-left: 20px;
+    }
+
+    .features li {
+      margin-bottom: 10px;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      margin-top: 20px;
+      font-size: 0.9rem;
+      color: #666;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 480px) {
+      .navbar {
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      .hero h2 {
+        font-size: 1.8rem;
+      }
+
+      .hero p {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <h1 class="logo">Headphones</h1>
+      <ul class="nav-links">
+        <li><a href="#features">Features</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h2>Discover Incredible Sound</h2>
+      <p>Experience unmatched quality with our premium headphones.</p>
+      <button class="cta-button">Shop Now</button>
+    </section>
+
+    <section id="features" class="features">
+      <h3>Why Choose Us?</h3>
+      <ul>
+        <li>Crystal-clear sound quality</li>
+        <li>Comfortable, ergonomic design</li>
+        <li>Long-lasting battery life</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Headphones Inc. All rights reserved.</p>
+  </footer>
+</body>
+</html>

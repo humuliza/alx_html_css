@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Headphones - Animated Page</title>
+  <style>
+    /* General Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background-color: #111;
+      color: white;
+    }
+
+    /* Header Styling */
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    .logo {
+      font-size: 1.8rem;
+      font-weight: bold;
+      color: white;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: white;
+      transition: color 0.3s;
+    }
+
+    .nav-links a:hover {
+      color: #FF6565;
+    }
+
+    /* "What We Do" Section */
+    .what-we-do {
+      padding: 50px 20px;
+      text-align: center;
+      background-color: #222;
+    }
+
+    .what-we-do h2 {
+      font-size: 2.5rem;
+      margin-bottom: 30px;
+    }
+
+    .features {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 40px;
+    }
+
+    .feature {
+      background: #333;
+      padding: 20px;
+      border-radius: 10px;
+      max-width: 300px;
+      text-align: center;
+      transition: transform 0.3s, box-shadow 0.3s;
+      animation: bounce 2s infinite;
+    }
+
+    .feature:hover {
+      transform: scale(1.1);
+      box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.5);
+    }
+
+    .feature .icon {
+      font-size: 3rem;
+      color: #FF6565;
+      margin-bottom: 20px;
+    }
+
+    .feature h3 {
+      font-size: 1.5rem;
+      margin-bottom: 15px;
+    }
+
+    .feature p {
+      font-size: 1rem;
+      color: #ddd;
+    }
+
+    /* "Our Results" Section */
+    .our-results {
+      padding: 50px 20px;
+      text-align: center;
+      background-color: #222;
+    }
+
+    .our-results h2 {
+      font-size: 2.5rem;
+      margin-bottom: 30px;
+    }
+
+    .results {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 40px;
+    }
+
+    .result-card {
+      text-align: center;
+      animation: fadeIn 1.5s ease-in;
+    }
+
+    .result-card:hover {
+      transform: rotate(10deg);
+      transition: transform 0.3s;
+    }
+
+    .result-card p {
+      font-size: 1.2rem;
+      margin-top: 15px;
+      color: #ddd;
+    }
+
+    /* Pentagon Styling */
+    .pentagon {
+      position: relative;
+      width: 120px;
+      height: 120px;
+      background: #FF6565;
+      clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 auto;
+      animation: scaleUp 2s infinite alternate;
+    }
+
+    .pentagon h3 {
+      font-size: 1.5rem;
+      color: white;
+      margin: 0;
+    }
+
+    /* Keyframe Animations */
+    @keyframes bounce {
+      0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+      }
+      40% {
+        transform: translateY(-10px);
+      }
+      60% {
+        transform: translateY(-5px);
+      }
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes scaleUp {
+      from {
+        transform: scale(1);
+      }
+      to {
+        transform: scale(1.1);
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Header Section -->
+  <header>
+    <div class="logo">Headphones</div>
+    <ul class="nav-links">
+      <li><a href="#what-we-do">What We Do</a></li>
+      <li><a href="#our-results">Our Results</a></li>
+      <li><a href="#contact-us">Contact Us</a></li>
+    </ul>
+  </header>
+
+  <!-- "What We Do" Section -->
+  <section id="what-we-do" class="what-we-do">
+    <h2>What We Do</h2>
+    <div class="features">
+      <div class="feature">
+        <span class="icon holberton-icon-headphones"></span>
+        <h3>High-Quality Sound</h3>
+        <p>We deliver exceptional sound quality with our state-of-the-art headphones.</p>
+      </div>
+      <div class="feature">
+        <span class="icon holberton-icon-music"></span>
+        <h3>Modern Design</h3>
+        <p>Our headphones are designed with comfort and aesthetics in mind.</p>
+      </div>
+      <div class="feature">
+        <span class="icon holberton-icon-heart"></span>
+        <h3>Customer Satisfaction</h3>
+        <p>Your happiness is our priority. We ensure a seamless listening experience.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- "Our Results" Section -->
+  <section id="our-results" class="our-results">
+    <h2>Our Results</h2>
+    <div class="results">
+      <div class="result-card">
+        <div class="pentagon">
+          <h3>5M+</h3>
+        </div>
+        <p>Happy Customers</p>
+      </div>
+      <div class="result-card">
+        <div class="pentagon">
+          <h3>4.9/5</h3>
+        </div>
+        <p>Average Rating</p>
+      </div>
+      <div class="result-card">
+        <div class="pentagon">
+          <h3>50+</h3>
+        </div>
+        <p>Awards Won</p>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
